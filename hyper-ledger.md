@@ -140,3 +140,14 @@ Wiki: https://wiki.hyperledger.org/projects/burrow
 
 **Summary:** Hyperledger Indy is a distributed ledger, purpose-built for decentralized identity. It provides tools, libraries, and reusable components for creating and using independent digital identities rooted on blockchains or other distributed ledgers so that they are interoperable across administrative domains, applications, and any other “silo.”
 
+## Explorer
+
+**Verion:** 3.8
+
+**Summary:** Hyperledger Explorer is open source browser for viewing the activity of an underlying blockchain network. That currently supports Hyperledger Fabric
+
+## Quilt
+
+**Version:** Pre-versioning
+
+**Summary:** Quilt offers interoperability between ledgers by implimentatiing the [Interledger](https://interledger.org/) protocal. (The interledger protocal provides atomic swaps)
