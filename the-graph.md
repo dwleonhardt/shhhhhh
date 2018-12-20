@@ -110,21 +110,31 @@ Returns:
 
 ### Similarities to Minotaur
 
-* Focus on indexing, speed of data retrieval
+* Wrapper for web3 to make data easier to consume
+* Focused on indexing, speed of data retrieval
 * Provides validation
+* Handles reorgs
+* Uses postgres
 
 ### Differences from Minotaur
 
-* 
+* Built on JavaScript, TypeScript, and Rust
+* GraphQL query language
+* IPFS file management
 
 ### Advantages Compared to Minotaur
 
 * Thorough token handling
 * Run your own Ethereum nodes or use their provided nodes (which are not up and running yet)
+* User friendly searching
+* Queries processed on a decentralized network, making them faster
+* Multiple node storage means built-in backups
+* No infrastructure to manage
 
 ### Disadvantages Compared to Minotaur
 
-* Not as customizable, although this will always be true compared to building custom software
+* Not as customizable (although this will always be true compared to building custom software)
+* Does not exist yet and will take a while to be fully supported
 
 ## Trying it out!
 
@@ -144,14 +154,13 @@ https://github.com/graphprotocol/graph-cli
 
 ## Resources
 
-[Website](https://thegraph.com/)
-[Blog](https://medium.com/graphprotocol)
-[Discord](https://discordapp.com/invite/vtvv7FP)
-[Graph Day](https://thegraph.com/graphday)
-[Graph Node getting started guide](https://github.com/graphprotocol/graph-node/blob/master/docs/getting-started.md)
+* [Website](https://thegraph.com/)
+* [Blog](https://medium.com/graphprotocol)
+* [Discord](https://discordapp.com/invite/vtvv7FP)
+* [Graph Day](https://thegraph.com/graphday)
+* [Graph Node getting started guide](https://github.com/graphprotocol/graph-node/blob/master/docs/getting-started.md)
 
 ## Summary
-
 
 ## Questions
 
