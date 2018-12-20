@@ -137,20 +137,21 @@ Returns:
 * Does not exist yet and will take a while to be fully supported
 
 ## Trying it out!
+Although the full product is not currently available, The Graph has two pieces of the full service that can be installed - [Graph Node](https://github.com/graphprotocol/graph-node) and [Graph CLI](https://github.com/graphprotocol/graph-cli). Below are notes on trying these services.
 
 ### Graph Node
 https://github.com/graphprotocol/graph-node
 
-* Note
-* Note
-* Note
+* 
+* 
+* 
 
 ### Graph CLI
 https://github.com/graphprotocol/graph-cli
 
-* Note
-* Note
-* Note
+*
+*
+*
 
 ## Resources
 
