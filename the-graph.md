@@ -46,16 +46,74 @@ query {
   }
 }
 ```
+Returns:
+```
+{
+  "data": {
+    "account": {
+      "address": "0x0113a6b755fbad36b4249fd63002e2035e401143",
+      "balances": [
+        {
+          "asset": {
+            "name": "Ethereum",
+            "symbol": "ETH"
+          },
+          "amount": 1
+        },
+        {
+          "asset": {
+            "name": "0x",
+            "symbol": "ZRX"
+          },
+          "amount": 20
+        },
+        {
+          "asset": {
+            "name": "District0x",
+            "symbol": "DNT"
+          },
+          "amount": 30
+        },
+        {
+          "asset": {
+            "name": "Decentraland",
+            "symbol": "MANA"
+          },
+          "amount": 45
+        },
+        {
+          "asset": {
+            "name": "Cosmos",
+            "symbol": "ATOM"
+          },
+          "amount": 60
+        }
+      ],
+      "transfersFrom": [
+        {
+          "to": {
+            "address": "0x13ca7527cbdafd84894b025470e699fb86ded2df"
+          },
+          "asset": {
+            "symbol": "ETH"
+          },
+          "amount": 0
+        }
+      ]
+    }
+  }
+}
+```
 
-### Compare/Contrast with Minotaur
+### Comparison with Minotaur
 
-#### Comparison point
+#### Advantages Compared to Minotaur
 
-Details
+* Thorough token handling
 
-#### Comparison point
+#### Disadvantages Compared to Minotaur
 
-Details
+* Not as customizable, although this will always be true when comparing to building custom software
 
 ### Trying it out!
 
