@@ -1,5 +1,7 @@
 # The Graph
+
 https://thegraph.com/
+
 Research by Amber Johnson
 
 ## What is The Graph?
