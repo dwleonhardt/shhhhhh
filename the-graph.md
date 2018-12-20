@@ -18,6 +18,7 @@ Research by Amber Johnson
 ### Use Cases
 Since The Graph is not yet widely available, the follow uses cases are theoretical:
 
+* An app to track Cryptokitties
 * Example dApp queries
   * What are the token balances for this wallet address?
   * Who is looking for credit matching my desired risk profile?
@@ -52,7 +53,7 @@ Returns:
   "data": {
     "account": {
       "address": "0x0113a6b755fbad36b4249fd63002e2035e401143",
-      "balances": [
+        "balances": [
         {
           "asset": {
             "name": "Ethereum",
@@ -90,15 +91,15 @@ Returns:
         }
       ],
       "transfersFrom": [
-        {
-          "to": {
-            "address": "0x13ca7527cbdafd84894b025470e699fb86ded2df"
-          },
-          "asset": {
-            "symbol": "ETH"
-          },
-          "amount": 0
-        }
+      {
+        "to": {
+          "address": "0x13ca7527cbdafd84894b025470e699fb86ded2df"
+        },
+        "asset": {
+          "symbol": "ETH"
+        },
+        "amount": 0
+      }
       ]
     }
   }
@@ -107,13 +108,23 @@ Returns:
 
 ### Comparison with Minotaur
 
+#### Similarities to Minotaur
+
+* Focus on indexing, speed of data retrieval
+* Provides validation
+
+#### Differences from Minotaur
+
+* 
+
 #### Advantages Compared to Minotaur
 
 * Thorough token handling
+* Run your own Ethereum nodes or use their provided nodes (which are not up and running yet)
 
 #### Disadvantages Compared to Minotaur
 
-* Not as customizable, although this will always be true when comparing to building custom software
+* Not as customizable, although this will always be true compared to building custom software
 
 ### Trying it out!
 
@@ -137,6 +148,7 @@ https://github.com/graphprotocol/graph-cli
 [Blog](https://medium.com/graphprotocol)
 [Discord](https://discordapp.com/invite/vtvv7FP)
 [Graph Day](https://thegraph.com/graphday)
+[Graph Node getting started guide](https://github.com/graphprotocol/graph-node/blob/master/docs/getting-started.md)
 
 ## Summary
 
