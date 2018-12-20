@@ -1,15 +1,15 @@
-[TOC]
-
 # The Graph
 
 **What is The Graph?**
 
-Description
-https://thegraph.com/
+* A protocol for building decentralized apps on Ethereum using the IPFS and GraphQL
+* IPFS - Interplanetary File System, a P2P network sharing hashed files
+* GraphQL - query language and runtime developed by Facebook
+* Built on Rust, JavaScript, TypeScript
 
 ### Maturity
 
-Info
+"Available soon"
 
 ### Use Cases
 
@@ -38,6 +38,13 @@ Details
 
 ### Resources
 
-Resource: URL
+[Website](https://thegraph.com/)
+[Blog](https://medium.com/graphprotocol)
+[Discord](https://discordapp.com/invite/vtvv7FP)
 
 ## Summary
+
+
+## Questions
+
+* Where do they get their blockchain data (Geth, Infura, etc)?
