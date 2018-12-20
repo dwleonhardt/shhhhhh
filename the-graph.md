@@ -1,4 +1,5 @@
 # The Graph
+https://thegraph.com/
 Research by Amber Johnson
 
 ## What is The Graph?
@@ -154,10 +155,10 @@ https://github.com/graphprotocol/graph-node
 ### Graph CLI
 https://github.com/graphprotocol/graph-cli
 
-Graph CLI is a thin layer providing commands for working with subgraphs, which contain references to a GraphQL schema, smart contract ABIs, and TypesScript mappings. Honestly there's not a whole lot of functionality.
+Graph CLI is a thin layer providing commands for working with subgraphs, which contain references to a GraphQL schema, smart contract ABIs, and TypesScript mappings. Honestly there's not a whole lot of functionality yet.
 
 ## Summary
-Overall, The Graph could be useful in the future but is not there yet. If they manage to fulfill all their promises, it will be a powerful tool.
+Overall, The Graph could be useful in the future but it is not there yet. If the product ends up delivering everything it promises, it has the potential to be a powerful tool. This is a service to keep an eye on.
 
 ## Resources
 
