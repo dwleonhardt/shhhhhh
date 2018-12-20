@@ -1,8 +1,15 @@
 # The Graph
-
-https://thegraph.com/
-
+https://thegraph.com/  
 Research by Amber Johnson
+
+##### Table of Contents  
+[What is The Graph?](#what-is-the-graph)  
+[Maturity](#maturity)  
+[Use Cases](#use-cases)  
+[Comparison to Minotaur](#comparison-to-minotaur)  
+[Trying it out!](#trying-it-out)  
+[Summary](#summary)  
+[Resources](#resources)
 
 ## What is The Graph?
 
