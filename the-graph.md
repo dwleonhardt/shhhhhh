@@ -4,15 +4,20 @@
 
 **What is The Graph?**
 
-DETAILS
+Description
+https://thegraph.com/
 
-### Features
+### Maturity
 
-#### Feature 1
+Info
+
+### Use Cases
+
+#### Use Case 1
 
 Description
 
-#### Feature 2
+#### Use Case 2
 
 Description
 
@@ -20,6 +25,16 @@ Description
 
 * list
 * list
+
+### Compare/Contrast with Minotaur
+
+#### Comparison point
+
+Details
+
+#### Comparison point
+
+Details
 
 ### Resources
 
