@@ -1,21 +1,21 @@
 # The Graph
 Research by Amber Johnson
 
-### What is The Graph?
+## What is The Graph?
 
 * A protocol for building decentralized apps on Ethereum using the IPFS and GraphQL
 * IPFS - Interplanetary File System, a P2P network sharing hashed files
 * GraphQL - query language and runtime developed by Facebook
 * Built on Rust, JavaScript, TypeScript, Web3, and Postgres
 
-### Maturity
+## Maturity
 
 * Not currently available
 * Created June 2018
 * From a November 2018 blog post - "We plan to have an alpha version of the hosted service ready internally by Christmas."
 * The Graph is hosting [Graph Day](https://thegraph.com/graphday) in San Francisco on January 25, 2019
 
-### Use Cases
+## Use Cases
 Since The Graph is not yet widely available, the follow uses cases are theoretical:
 
 * An app to track Cryptokitties
@@ -106,43 +106,43 @@ Returns:
 }
 ```
 
-### Comparison with Minotaur
+## Comparison to Minotaur
 
-#### Similarities to Minotaur
+### Similarities to Minotaur
 
 * Focus on indexing, speed of data retrieval
 * Provides validation
 
-#### Differences from Minotaur
+### Differences from Minotaur
 
 * 
 
-#### Advantages Compared to Minotaur
+### Advantages Compared to Minotaur
 
 * Thorough token handling
 * Run your own Ethereum nodes or use their provided nodes (which are not up and running yet)
 
-#### Disadvantages Compared to Minotaur
+### Disadvantages Compared to Minotaur
 
 * Not as customizable, although this will always be true compared to building custom software
 
-### Trying it out!
+## Trying it out!
 
-## Graph Node
+### Graph Node
 https://github.com/graphprotocol/graph-node
 
 * Note
 * Note
 * Note
 
-## Graph CLI
+### Graph CLI
 https://github.com/graphprotocol/graph-cli
 
 * Note
 * Note
 * Note
 
-### Resources
+## Resources
 
 [Website](https://thegraph.com/)
 [Blog](https://medium.com/graphprotocol)
