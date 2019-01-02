@@ -14,9 +14,16 @@ Use the following command to install the Fabric Samples, binaries, and Docker im
 
 ### Running the first-network Example
 
-* Navigate to ```fabric-samples/first-network``` directory then use ```byfn.sh up``` to start the network.
+* Navigate to ```fabric-samples/first-network``` directory then use ```./byfn.sh up``` to start the network.
 
 * Now you can type ```docker exec -it cli bash ``` to access the example Fabric network's docker container.
 
-* To stop the network type ```byfn.sh down```
+* To stop the network type ```./byfn.sh down```
 
+```export PATH=PWD/bin:PATH```
+
+```cryptogen generate --config=./crypto-config.yaml```
+
+
+
+https://hyperledger-fabric-ca.readthedocs.io
