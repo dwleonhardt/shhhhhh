@@ -5,7 +5,7 @@ export FABRIC_CFG_PATH=${PWD}
 export VERBOSE=false
 
 function networkUp() {
-  IMAGE_TAG="latest" docker-compose -f  docker-compose-cli.yaml up -d 2>&1
+  IMAGE_TAG="latest" docker-compose -f  docker-compose-cli.yaml up 2>&1
 }
 
 function networkDown() {

@@ -24,6 +24,26 @@ Use the following command to install the Fabric Samples, binaries, and Docker im
 
 ```cryptogen generate --config=./crypto-config.yaml```
 
+```configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./channel-artifacts/genesis.block```
 
+```configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID "testchannel"```
+
+```configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/OrgMSPanchors.tx -channelID "testchannel" -asOrg OrgMSP```
+
+```export CHANNEL_NAME=testchannel  && configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID testchannel```
+
+```configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/OrgMSPanchors.tx -channelID testchannel -asOrg OrgMSP```
 
 https://hyperledger-fabric-ca.readthedocs.io
+
+MSP - Membership Service Provider
+
+CA - Certified Authority
+
+One CA per organization (a CA can be interacted with via the SDK or the built in REST API)
+
+### Binaries
+
+configtxgen - allows users to create and view config related artifiacts (for example genesis block)
+
+cryptogen - a tool used for preconfiguring a network for testing purposes and would usually not be used in production
