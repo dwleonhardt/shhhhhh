@@ -26,13 +26,17 @@ Use the following command to install the Fabric Samples, binaries, and Docker im
 
 ```configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./channel-artifacts/genesis.block```
 
-```configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID "testchannel"```
+```./bin/configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID "testchannel"```
 
-```configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/OrgMSPanchors.tx -channelID "testchannel" -asOrg OrgMSP```
+```./bin/configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/OrgMSPanchors.tx -channelID "testchannel" -asOrg OrgMSP```
 
-```export CHANNEL_NAME=testchannel  && configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID testchannel```
+```export CHANNEL_NAME=testchannel  && ./bin/configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID testchannel```
 
-```configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/OrgMSPanchors.tx -channelID testchannel -asOrg OrgMSP```
+```./bin/configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/OrgMSPanchors.tx -channelID testchannel -asOrg OrgMSP```
+
+```
+peer channel join -b 
+```
 
 https://hyperledger-fabric-ca.readthedocs.io
 

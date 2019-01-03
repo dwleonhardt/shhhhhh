@@ -2,7 +2,7 @@
 
 export PATH=${PWD}/../bin:${PWD}:$PATH
 export FABRIC_CFG_PATH=${PWD}
-export VERBOSE=false
+export VERBOSE=true
 
 function networkUp() {
   IMAGE_TAG="latest" docker-compose -f  docker-compose-cli.yaml up 2>&1
