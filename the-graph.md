@@ -7,7 +7,7 @@ Research by Amber Johnson
 [Maturity](#maturity)  
 [Use Cases](#use-cases)  
 [Comparison to Minotaur](#comparison-to-minotaur)  
-[Trying it out!](#trying-it-out)  
+[Implementation Notes](#implementation-notes)  
 [Summary](#summary)  
 [Resources](#resources)
 
@@ -131,6 +131,7 @@ Returns:
 * Built on JavaScript, TypeScript, and Rust
 * GraphQL query language
 * IPFS file management
+* Mapping of the schema must be defined before scanning, and only data selected in the schema will be accessible
 
 ### Advantages Compared to Minotaur
 
@@ -147,10 +148,28 @@ Returns:
 * Does not exist yet and will take a while to be fully supported
 * It seems like you need to store a full copy of the Ethereum blockchain on your personal hard drive, and then that data gets shared with everyone else over IPFS
 
-## Trying it out!
+## Implementation Notes
 Although the full product is not currently available, The Graph has two services that can be installed now - [Graph Node](https://github.com/graphprotocol/graph-node) and [Graph CLI](https://github.com/graphprotocol/graph-cli). Below are notes on trying these services.
 
-### Graph Node
+### Graph Node - Getting Started Guide (More Thorough)
+https://github.com/graphprotocol/graph-node/blob/master/docs/getting-started.md
+
+* The Getting Started Guide was not as straightforward as the Quick Start
+* Basic steps outlined in the Getting Started Guide:
+  * Clone down the `graph-node` repo and set it up, then start a subgraph project in another directory
+  * In the subgraph directory:
+    * In `subgraph.yaml`, define a data source, a database to connect to, and other settings
+    * Provide a JSON file of the abi
+    * Outline the desired schema in a `schema.graphql` file
+    * Run `yarn codegen` to auto-generate types based on the abi and the schema
+    * Write mappings and event handling functions using the auto-generated types. This will dictate how the raw Ethereum data will be transformed and stored on IPFS
+    * Run IPFS with the `ipfs daemon` command
+  * Back in the `graph-node` repo, start the node
+  * In the subgraph directory, run `yarn deploy --watch` to deploy the subgraph, which can now be queried with GraphQl commands
+* I was unable to get the Getting Started code up and running, so I cloned down another repo they suggested. The forked *ens-subgraph* repo is [here](https://gitlab.com/amberjohnsonsmile/ens-subgraph). Everything ran fine and I was able to query the subgraph.
+* Overall, the graph-node and subgraph setup is difficult to debug because of all the different pieces. For example, problems in the subgraph get logged on the graph-node, which is a fully separate process
+
+### Graph Node - Quick Start (Less Thorough)
 https://github.com/graphprotocol/graph-node
 
 * Quick start guide is easy to follow
