@@ -57,10 +57,10 @@ Organizations:
   Policies:
     Readers:
       Type: Signature
-      Rule: "OR('OrgMSP.admin', 'Org1MSP.peer', 'Org1MSP.client')"
+      Rule: "OR('OrgMSP.admin', 'OrgMSP.peer', 'OrgMSP.client')"
     Writers:
       Type: Signature
-      Rule: "OR('OrgMSP.admin', 'Org1MSP.client')"
+      Rule: "OR('OrgMSP.admin', 'OrgMSP.client')"
     Admins:
       Type: Signature
       Rule: "OR('OrgMSP.admin')"

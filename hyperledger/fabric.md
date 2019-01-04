@@ -20,26 +20,6 @@ Use the following command to install the Fabric Samples, binaries, and Docker im
 
 * To stop the network type ```./byfn.sh down```
 
-```export PATH=PWD/bin:PATH```
-
-```cryptogen generate --config=./crypto-config.yaml```
-
-```configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./channel-artifacts/genesis.block```
-
-```./bin/configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID "testchannel"```
-
-```./bin/configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/OrgMSPanchors.tx -channelID "testchannel" -asOrg OrgMSP```
-
-```export CHANNEL_NAME=testchannel  && ./bin/configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID testchannel```
-
-```./bin/configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/OrgMSPanchors.tx -channelID testchannel -asOrg OrgMSP```
-
-```
-peer channel join -b 
-```
-
-https://hyperledger-fabric-ca.readthedocs.io
-
 MSP - Membership Service Provider
 
 CA - Certified Authority
@@ -51,3 +31,7 @@ One CA per organization (a CA can be interacted with via the SDK or the built in
 configtxgen - allows users to create and view config related artifiacts (for example genesis block)
 
 cryptogen - a tool used for preconfiguring a network for testing purposes and would usually not be used in production
+
+### Configuration Block
+
+Contains the configuration data defining members and policies for a system chain (ordering service) or channel. Any configuration modifications to a channel or overall network (e.g. a member leaving or joining) will result in a new configuration block being appended to the appropriate chain. This block will contain the contents of the genesis block, plus the delta.

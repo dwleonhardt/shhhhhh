@@ -6,4 +6,5 @@
 /ledgers-backup
 /bin/*
 /config/*
+/node_modules/*
 .idea
