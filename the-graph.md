@@ -166,7 +166,7 @@ https://github.com/graphprotocol/graph-node/blob/master/docs/getting-started.md
     * Run IPFS with the `ipfs daemon` command
   * Back in the `graph-node` repo, start the node
   * In the subgraph directory, run `yarn deploy --watch` to deploy the subgraph, which can now be queried with GraphQl commands
-* I was unable to get the Getting Started code up and running, so I cloned down another repo they suggested. The forked *ens-subgraph* repo is [here](https://gitlab.com/amberjohnsonsmile/ens-subgraph). Everything ran fine and I was able to query the subgraph.
+* I was unable to get the Getting Started code up and running, so I cloned down another repo they suggested. The forked **ens-subgraph** repo is [here](https://gitlab.com/amberjohnsonsmile/ens-subgraph). Everything ran fine and I was able to query the subgraph
 * Overall, the graph-node and subgraph setup is difficult to debug because of all the different pieces. For example, problems in the subgraph get logged on the graph-node, which is a fully separate process
 
 ### Graph Node - Quick Start (Less Thorough)
