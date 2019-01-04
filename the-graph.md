@@ -8,6 +8,7 @@ Research by Amber Johnson
 [Use Cases](#use-cases)  
 [Comparison to Minotaur](#comparison-to-minotaur)  
 [Implementation Notes](#implementation-notes)  
+[Working Example](#working-example)
 [Summary](#summary)  
 [Resources](#resources)
 
@@ -184,6 +185,9 @@ https://github.com/graphprotocol/graph-node
 https://github.com/graphprotocol/graph-cli
 
 Graph CLI is a thin layer providing commands for working with subgraphs, which contain references to a GraphQL schema, smart contract ABIs, and TypesScript mappings. Honestly there's not a whole lot of functionality yet.
+
+## Working Example
+A working example can be cloned down from [this repo](https://gitlab.com/amberjohnsonsmile/ens-subgraph), which is a fork of an open-source example suggested in the `graph-node` repo.
 
 ## Summary
 Overall, The Graph could be useful in the future but it is not there yet. If the product ends up delivering everything it promises, it has the potential to be a powerful tool. This is a service to keep an eye on.
