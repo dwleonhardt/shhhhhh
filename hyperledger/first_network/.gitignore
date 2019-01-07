@@ -7,4 +7,7 @@
 /bin/*
 /config/*
 /node_modules/*
+/sdk-config/client.yaml
+/genesis.json
+/mychannel.json
 .idea

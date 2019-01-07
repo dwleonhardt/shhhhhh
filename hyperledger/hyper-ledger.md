@@ -95,6 +95,8 @@ Documentation: https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html
 
 **Solidity Integration:** Fabric can support Solidity smart contracts by utilizing Hyperledger's Fabric Chaincode EVM. In its current state, once you have added the EVM chaincode support to the network, deploying solidity chaincode to a Fabric network is relatively simple and just requires the smart contracts byte code to deploy.
 
+**Transaction Flow Reference:** https://hyperledger-fabric.readthedocs.io/en/latest/txflow.html
+
 [**Dev Environment Setup**](fabric.md)
 
 **Resources:**

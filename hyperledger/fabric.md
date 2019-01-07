@@ -30,6 +30,8 @@ One CA per organization (a CA can be interacted with via the SDK or the built in
 
 configtxgen - allows users to create and view config related artifiacts (for example genesis block)
 
+**coinfigtx.yaml reference:** https://chaincodedevs.com/showthread.php?tid=154
+
 cryptogen - a tool used for preconfiguring a network for testing purposes and would usually not be used in production
 
 ### Configuration Block
