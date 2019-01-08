@@ -13,9 +13,9 @@ Research by Amber Johnson
 
 ## What is BigchainDB?
 
-* Private blockchain
+* Library for setting up a private blockchain
 * Database setup is taken care of under the hood using MongoDB
-* Drivers available for JavaScript, Python, and Java
+* Drivers are available for JavaScript, Python, and Java
 * The BigchainDB ORM allows interaction with data
 * Data is structured in assets and transactions on those assets
 
