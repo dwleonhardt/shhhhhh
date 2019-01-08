@@ -1,6 +1,6 @@
 # IPFS Testing
 
-Testing local IPFS setup. Includes instructions for storing and accessing an encrypted document.
+Testing local IPFS setup. See below for instructions on basic setup and storing and accessing encrypted documents. For more general information on IPFS, see the [research page](ipfs.md).
 
 ##### Table of Contents  
 [What is IPFS?](#what-is-ipfs)  
