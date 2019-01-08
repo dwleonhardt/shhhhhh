@@ -27,10 +27,10 @@ Research by Amber Johnson
 
 ## Use Cases
 
-* Intellectual property - [Resonate](https://resonate.is/) leverages BlockchainDB to manage ownership of streaming music
-* Identity - [Recruit](http://recruit-tech.co.jp/) is a Japanese company that uses BlockchainDB to help verify a person's education
+* Intellectual property - [Resonate](https://resonate.is/) leverages BigchainDB to manage ownership of streaming music
+* Identity - [Recruit](http://recruit-tech.co.jp/) is a Japanese company that uses BigchainDB to help verify a person's education
 * Supply chain - [innogy](https://www.innogy.com/web/cms/en/3087918/for-your-home/) tracks where products have been
-* Government - [BenBen](http://www.benben.com.gh/) maintains a land registry in Ghana using BlockchainDB to prove ownership 
+* Government - [BenBen](http://www.benben.com.gh/) maintains a land registry in Ghana using BigchainDB to prove ownership 
 
 ## Implementation Notes
 
