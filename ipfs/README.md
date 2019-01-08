@@ -1,13 +1,21 @@
 # IPFS Testing
 
-Test repo for local IPFS setup. Instructions for storing and accessing an encrypted document may be found below.
+Testing local IPFS setup. Includes instructions for storing and accessing an encrypted document.
 
-## Table of Contents
+##### Table of Contents  
+[What is IPFS?](#what-is-ipfs)  
+[Basic Setup](#basic-setup)  
+[Storing an Encrypted Document](#storing-an-encrypted-document)  
+[Accessing an Ecrypted Document](#accessing-an-encrypted-document)  
+[Resources](#resources)
 
 ## What is IPFS?
 
-## Storing and Encrypted Document
+## Basic Setup
+
+## Storing an Encrypted Document
+After completing [basic setup](#basic-setup),
 
 ## Accessing an Encrypted Document
-
+After completing [basic setup](#basic-setup) and [storing an encrypted document](storing-an-encryped-document), 
 ## Resources
