@@ -13,15 +13,16 @@ Research by Amber Johnson
 
 ## What is BigchainDB?
 
-* BigchainDB allows blockchain data to be stored on a pre-built nodes, so that no external DB
+* BigchainDB provides a private blockchain stored on pre-built nodes
+* Database setup is taken care of under the hood using MongoDB
+* Drivers available for JavaScript, Python, and Java
 * The BigchainDB ORM allows communication with the data
 * Data is structured in assets and transactions on those assets
-* Drivers are available for JavaScript, Python, and Java
 
 ## Maturity
 
-* 
-* 
+* BigchainDB was founded in Germany in 2014
+* The core library `bigchaindb-driver` is currently on version 4.1.0
 
 ## Use Cases
 
@@ -37,6 +38,7 @@ Research by Amber Johnson
 A test app can be cloned down from this [Farm To Fork repo](https://github.com/amberjohnsonsmile/farm-to-fork), which is based on a [tutorial](https://medium.com/wearetheledger/bigchaindb-a-hands-on-approach-42e1d3b4e7a) by Artus Vranken. He also has a [deployed example](https://artus.github.io/FarmToFork/) of the POC.
 
 ## Summary
+BigchainDB provides a user-friendly way to run a blockchain. Advantages would include easy setup, 
 
 ## Resources
 
