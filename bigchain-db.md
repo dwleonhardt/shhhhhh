@@ -45,7 +45,7 @@ BigchainDB provides a user-friendly way to save blockchain data using MongoDB. I
 
 ## Resources
 
-* [Website](https://www.bigchaindb.com/)
-* [Blog](https://blog.bigchaindb.com/)
-* [Github](https://github.com/bigchaindb/bigchaindb)
+* [BigchainDB Website](https://www.bigchaindb.com/)
+* [BigchainDB Blog](https://blog.bigchaindb.com/)
+* [BigchainDB Github](https://github.com/bigchaindb/bigchaindb)
 * [Farm To Fork Tutorial](https://medium.com/wearetheledger/bigchaindb-a-hands-on-approach-42e1d3b4e7a)
