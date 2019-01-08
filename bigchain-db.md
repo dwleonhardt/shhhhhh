@@ -1,5 +1,5 @@
 # BigchainDB
-https://www.bigchaindb.com/
+https://www.bigchaindb.com/  
 Research by Amber Johnson
 
 ##### Table of Contents  
