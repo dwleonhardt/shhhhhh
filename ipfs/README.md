@@ -1,6 +1,6 @@
-# IPFS Testing
+# Interplanetary File System Testing
 
-Testing local IPFS setup. See below for instructions on basic setup and storing and accessing encrypted documents. For more general information on IPFS, see the [research page](ipfs.md).
+Testing a local IPFS setup. See below for instructions for storing and accessing encrypted documents. For more general information on IPFS, see the [research page](ipfs.md).
 
 ##### Table of Contents  
 [What is IPFS?](#what-is-ipfs)  
@@ -10,6 +10,7 @@ Testing local IPFS setup. See below for instructions on basic setup and storing 
 [Resources](#resources)
 
 ## What is IPFS?
+The Interplanetary File System, or IPFS, is a protocol for file storage. Asymmetric encryption may be added, then files are hashed and stored. In this way, files may be kept and shared anonymously.
 
 ## Basic Setup
 
@@ -17,5 +18,6 @@ Testing local IPFS setup. See below for instructions on basic setup and storing 
 After completing [basic setup](#basic-setup),
 
 ## Accessing an Encrypted Document
-After completing [basic setup](#basic-setup) and [storing an encrypted document](storing-an-encryped-document), 
+After completing [basic setup](#basic-setup) and [storing an encrypted document](#storing-an-encryped-document), 
+
 ## Resources
