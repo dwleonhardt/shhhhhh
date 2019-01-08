@@ -1,0 +1,52 @@
+version: '2'
+
+volumes:
+  orderer.test.com:
+  peer0.org.test.com:
+  peer1.org.test.com:
+
+networks:
+  test:
+services:
+  ca:
+    image: hyperledger/fabric-ca:$IMAGE_TAG
+    environment:
+    - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+    - FABRIC_CA_SERVER_CA_NAME=ca-org
+    - FABRIC_CA_SERVER_TLS_ENABLED=true
+    - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org.test.com-cert.pem
+    - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/CA1_PRIVATE_KEY
+    ports:
+    - "7054:7054"
+    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.org.test.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/CA1_PRIVATE_KEY -b admin:adminpw -d'
+    volumes:
+    - ./crypto-config/peerOrganizations/org.test.com/ca/:/etc/hyperledger/fabric-ca-server-config
+    container_name: ca_peerOrg
+    networks:
+    - test
+
+  orderer.test.com:
+    extends:
+      file:   docker-compose-base.yaml
+      service: orderer.test.com
+    container_name: orderer.test.com
+    networks:
+    - test
+
+  peer0.org.test.com:
+    container_name: peer0.org.test.com
+    extends:
+      file:  docker-compose-base.yaml
+      service: peer0.org.test.com
+    networks:
+    - test
+
+  peer1.org.test.com:
+    container_name: peer1.org.test.com
+    extends:
+      file:  docker-compose-base.yaml
+      service: peer1.org.test.com
+    networks:
+    - test
+
+#TODO: Spin up and test CA server and potentially add to docker-compose-cli.yaml

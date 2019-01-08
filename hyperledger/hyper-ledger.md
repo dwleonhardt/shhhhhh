@@ -1,5 +1,3 @@
-[TOC]
-
 # Hyperledger
 
 **What is Hyperledger?**
@@ -81,6 +79,10 @@ Iroha has a novel, Byzantine fault tolerant consensus algorithm called Yet Anoth
 
 ## Fabric
 
+A network can have many channels. Each contract can be installed on a peer node by an admin and then the admin can control which network channels have access to the contract.
+
+Chaincode - https://hyperledger-fabric.readthedocs.io/en/latest/chaincode.html
+
 **Version:** 1.4 
 
 **Summary:** Fabric is a permissioned blockchain framework that allows for modular plug and play configuration of consensus, membership, peer relationship, smart contract, ledger, and transaction endorsment moduals.
@@ -89,7 +91,19 @@ Fabric was contributed to Hyperledger by Digital Asset and IBM.
 
 Explaination: https://www.youtube.com/watch?v=js3Zjxbo8TM
 
-Documentatio: https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html
+Documentation: https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html
+
+**Solidity Integration:** Fabric can support Solidity smart contracts by utilizing Hyperledger's Fabric Chaincode EVM. In its current state, once you have added the EVM chaincode support to the network, deploying solidity chaincode to a Fabric network is relatively simple and just requires the smart contracts byte code to deploy.
+
+**Transaction Flow Reference:** https://hyperledger-fabric.readthedocs.io/en/latest/txflow.html
+
+[**Dev Environment Setup**](fabric.md)
+
+**Resources:**
+
+Fabric Chaincode EVM: https://github.com/hyperledger/fabric-chaincode-evm
+
+Solidity Smart Contract Deployment: https://medium.com/coinmonks/solidity-smart-contract-on-hyperledger-fabric-3d50f25e577b
 
 ### Features
 
@@ -111,6 +125,7 @@ As of version 1.1.0 smart contracts can be written in the following languages:
 
 * Go
 * Node.js
+* Java
 
 #### Consensus
 
@@ -121,6 +136,16 @@ Currently supported consensus:
 * Crash Fault Tolerant (Kafka and Zookeeper)
   * Kafka - https://kafka.apache.org/
   * Zookeeper - https://zookeeper.apache.org/
+
+### Terminology
+
+**CSR:** Certificate Signing Request
+
+* This is used to create new public an private keys for a user that can then be stored in a wallet.
+
+**CA:** Certified Authority
+
+**Registrar:** A record of all users and permission levels
 
 ## Burrow
 

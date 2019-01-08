@@ -1,0 +1,70 @@
+name: "Network"
+version: "1.0"
+
+channels:
+  mychannel:
+    orderers:
+    - orderer.example.com
+    peers:
+      peer0.org1.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+      peer0.org2.example.com:
+        endorsingPeer: true
+        chaincodeQuery: false
+        ledgerQuery: true
+        eventSource: false
+
+organizations:
+  Org:
+    mspid: OrgMSP
+    peers:
+    - peer0.org.test.com
+    - peer1.org.test.com
+    certificateAuthorities:
+    - ca
+    adminPrivateKey:
+      path: crypto-config/peerOrganizations/org.test.com/users/Admin@org.test.com/keystore/21659e9f9cf0a5e7dacfe6114ff3ea40e33a098edca31324ad8c5a1498fe25a6_sk
+    signedCert:
+      path: crypto-config/peerOrganizations/org.test.com/users/Admin@org.test.com/signcerts/Admin@org.test.com-cert.pem
+
+orderers:
+  orderer.example.com:
+    url: grpcs://localhost:7050
+    grpcOptions:
+      ssl-target-name-override: orderer.example.com
+      grpc-max-send-message-length: 15
+    tlsCACerts:
+      path: crypto-config/ordererOrganizations/test.com/orderers/orderer.test.com/tlscacerts/tlsca.test.com-cert.perm
+
+peers:
+  peer0.org.test.com:
+    url: grpcs://localhost:7051
+    eventUrl: grpcs://localhost:7053
+    grpcOptions:
+      ssl-target-name-override: peer0.org.test.com
+      grpc.keepalive_time_ms: 600000
+    tlsCACerts:
+      path: crypto-config/peerOrganizations/org.test.com/peers/peer0.org.test.com/msp/tlscacerts/tlsca.org.test.com-cert.pem
+
+  peer1.org.test.com:
+    url: grpcs://localhost:8051
+    eventUrl: grpcs://localhost:8053
+    grpcOptions:
+      ssl-target-name-override: peer1.org.test.com
+    tlsCACerts:
+      path: crypto-config/peerOrganizations/org.test.com/peers/peer1.org.test.com/msp/tlscacerts/tlsca.org.test.com-cert.pem
+
+certificateAuthorities:
+  ca:
+    url: https://localhost:7054
+    httpOptions:
+      verify: false
+    tlsCACerts:
+      path: crypto-config/peerOrganizations/org.test.com/ca/org.test.com-cert.pem
+    registrar:
+    - enrollId: admin
+      enrollSecret: adminpw
+    caName: ca

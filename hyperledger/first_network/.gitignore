@@ -1,0 +1,13 @@
+/channel-artifacts/*.tx
+/channel-artifacts/*.block
+/crypto-config/*
+/docker-compose-ca.yaml
+/ledgers
+/ledgers-backup
+/bin/*
+/config/*
+/node_modules/*
+/sdk-config/client.yaml
+/genesis.json
+/mychannel.json
+.idea
