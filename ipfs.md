@@ -11,17 +11,21 @@ Research by Amber Johnson
 [Resources](#resources)  
 
 ## What is IPFS?
-The Interplanetary File System, or IPFS, is a protocol for file storage written in Go. Files are hashed before storage, with the optional addition of asymmetric encryption. Files are then stored on a peer-to-peer network and can be shared securely.
+* The Interplanetary File System, aka IPFS
+* Protocol for P2P file storage
+* Written in Go
+* Files are stored on the network and may be accessed by their corresponding hash
+* Optional addition of asymmetric encryption, allowing files to be shared securely
 
 ## Maturity
 
 * Developed by Protocol Labs
-* 
+* Work started in 2010, but 
 
 ## Use Cases
 
 * Catalan independence referendum
-* Wikipedia mirror
+* Uncensored mirror for Wikipedia
 * Filecoin
 
 ## Implementation Notes
