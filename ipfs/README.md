@@ -13,6 +13,8 @@ Testing a local IPFS setup. See below for instructions for storing and accessing
 The Interplanetary File System, or IPFS, is a protocol for file storage. Asymmetric encryption may be added, then files are hashed and stored. In this way, files may be kept and shared anonymously.
 
 ## Basic Setup
+1. Clone down this repo and `cd research/ipfs`
+1. 
 
 ## Storing an Encrypted Document
 After completing [basic setup](#basic-setup),
