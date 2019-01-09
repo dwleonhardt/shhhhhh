@@ -1,17 +1,38 @@
-# Interplanetary File System Testing
+# Interplanetary File System
+https://ipfs.io/
+Research by Amber Johnson
 
-Testing a local IPFS setup. See below for instructions for storing and accessing encrypted documents. For more general information on IPFS, see the [research page](ipfs.md).
-
-##### Table of Contents  
-[What is IPFS?](#what-is-ipfs)  
-[Basic Setup](#basic-setup)  
-[Share an Encrypted Document](#share-an-encrypted-document)  
+##### Table of Contents
+[What is IPFS?](#what-is-ipfs)
+[Maturity](#maturity)
+[Use Cases](#use-cases)
+[How To Guide](#how-to-guide)
+[Summary](#summary)
 [Resources](#resources)
 
 ## What is IPFS?
-The Interplanetary File System, or IPFS, is a protocol for file storage. Files are hashed before storage, with the optional addition of asymmetric encryption. Files are then stored on a peer-to-peer network and can be shared securely.
+The Interplanetary File System, or IPFS, is a protocol for file storage written in Go. Files are hashed before storage, with the optional addition of asymmetric encryption. Files are then stored on a peer-to-peer network and can be shared securely.
 
-## Basic Setup
+## Maturity
+
+* Developed by Protocol Labs
+* 
+
+## Use Cases
+
+* Catalan independence referendum
+* Wikipedia mirror
+* Filecoin
+
+## Implementation Notes
+
+* 
+* 
+
+## How-To Guide
+The instructions below will allow you to store and access encrypted documents.
+
+### Basic Setup
 For a more thorough setup and how-to guide, see [this Medium article](https://medium.com/@mycoralhealth/learn-to-securely-share-files-on-the-blockchain-with-ipfs-219ee47df54c).
 
 1. Clone down this repo and run `cd research/ipfs`.
@@ -19,7 +40,7 @@ For a more thorough setup and how-to guide, see [this Medium article](https://me
 1. Generate a keypair with `gpg --gen-key`, following the prompts.
 1. Install IPFS - visit the [IPFS install page](https://docs.ipfs.io/introduction/install/) to download the prebuilt package and install it.
 
-## Share an Encrypted Document
+### Share an Encrypted Document
 Note: you will need two computers to complete the following steps.
 
 1. Complete the [basic setup](#basic-setup) on both computers.
@@ -40,7 +61,13 @@ Note: you will need two computers to complete the following steps.
   1. Decrypt the file by running `gpg --decrypt QmYqSCWuzG8Cyo4MFQzqKcC14ct4ybAWyrAc9qzdJaFYTL > myriad.pdf`, again replacing `Qm...` with the appropriate hash and `myriad.pdf` with the filename to generate.
   1. The file has been decrypted and can now be accessed!
 
+## Summary
+
+
+
 ## Resources
 
 * [IPFS Website](https://ipfs.io/)
+* [IPFS Blog](https://blog.ipfs.io/)
+* [IPFS Github](https://github.com/ipfs/ipfs)
 * [File Sharing Tutorial](https://medium.com/@mycoralhealth/learn-to-securely-share-files-on-the-blockchain-with-ipfs-219ee47df54c)
