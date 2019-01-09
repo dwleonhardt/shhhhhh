@@ -20,18 +20,16 @@ Research by Amber Johnson
 ## Maturity
 
 * Developed by Protocol Labs
-* Work started in 2010, but 
+* Work began on the idea in 2010
+* Currently on version 0.4.18
+* Many users, and the product is well-supported
 
 ## Use Cases
 
-* Catalan independence referendum
-* Uncensored mirror for Wikipedia
-* Filecoin
-
-## Implementation Notes
-
-* 
-* 
+* Catalan independence - a website promoting Catalan independence was censored by the government, so IPFS was used to mirror the site and keep it up and running
+* Uncensored mirror for Wikipedia - routing the website through IPFS allows residents of locations where Wikipedia is censored to access it
+* Filecoin - cooperative storage cloud using IPFS
+* Textile photo wallet - app for secure photo storage using IPFS
 
 ## How-To Guide
 The instructions below will allow you to store and access encrypted documents.
@@ -73,4 +71,5 @@ Note: you will need two computers to complete the following steps.
 * [IPFS Website](https://ipfs.io/)
 * [IPFS Blog](https://blog.ipfs.io/)
 * [IPFS Github](https://github.com/ipfs/ipfs)
+* [IPFS Wikipedia](https://en.wikipedia.org/wiki/InterPlanetary_File_System)
 * [Medium article - Learn to securely share files on the blockchain with IPFS!](https://medium.com/@mycoralhealth/learn-to-securely-share-files-on-the-blockchain-with-ipfs-219ee47df54c)
