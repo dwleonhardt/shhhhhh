@@ -6,4 +6,4 @@
 
 [BigchainDB](bigchain-db.md)
 
-[Interplanetary File System](ipfs.md)
+[Interplanetary File System](ipfs/ipfs.md)
