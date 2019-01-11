@@ -62,10 +62,12 @@ class App extends Component {
 
   // BELOW ADDED
   handleChangeAddress(event){
+    event.preventDefault()
     this.setState({formAddress: event.target.value});
   }
 
   handleChangeIPFS(event){
+    event.preventDefault()
     this.setState({formIPFS: event.target.value})
   }
 
@@ -77,12 +79,10 @@ class App extends Component {
     document.getElementById('new-notification-form').reset()
     this.setState({showNotification: true});
 
-    // contract.methods.sendIPFS(this.state.formAddress, this.state.formIFPS, {from: account})
-    console.log(this.state.formAddress)
-    console.log(this.state.formIPFS)
-    contract.methods.sendIPFS(this.state.formAddress, this.state.formIFPS)
-    .call()
-    .then(result => {
+    console.log(this.state.formAddress, this.state.formIPFS)
+    contract.methods.sendIPFS(this.state.formAddress, this.state.formIPFS)
+    .send({from: account})
+    .then(() => {
       this.setState({formAddress: ""});
       this.setState({formIPFS: ""});
     })
@@ -92,7 +92,7 @@ class App extends Component {
     event.preventDefault();
     const contract = this.state.contract
     const account = this.state.accounts[0]
-    contract.checkInbox({from: account})
+    contract.methods.checkInbox().send({from: account})
   }
 
   // Turns the file submitted into a buffer
