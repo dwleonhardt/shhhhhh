@@ -11,8 +11,22 @@ class App extends Component {
       web3: null,
       accounts: null,
       contract: null,
-      ipfsHash: null
+      ipfsHash: null,
+      formIPFS: "",
+      formAddress: "",
+      receivedIPFS: ""
     };
+
+    this.handleChangeAddress = this.handleChangeAddress.bind(this);
+    this.handleChangeIPFS = this.handleChangeIPFS.bind(this);
+    this.handleSend = this.handleSend.bind(this);
+    this.handleReceiveIPFS = this.handleReceiveIPFS.bind(this);
+  }
+
+  setEventListeners() {
+    this.state.contract.events.inboxResponse(result => {
+      this.setState({receivedIPFS: result.args[0]})
+    });
   }
 
   componentDidMount = async () => {
@@ -30,10 +44,13 @@ class App extends Component {
         IPFSInboxContract.abi,
         deployedNetwork && deployedNetwork.address,
       );
+      instance.options.address =  "0x7155Fe4B535399843d0C435c584d92bca71544B8"
 
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.
       this.setState({ web3, accounts, contract: instance });
+      this.setEventListeners();
+
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
@@ -42,6 +59,41 @@ class App extends Component {
       console.error(error);
     }
   };
+
+  // BELOW ADDED
+  handleChangeAddress(event){
+    this.setState({formAddress: event.target.value});
+  }
+
+  handleChangeIPFS(event){
+    this.setState({formIPFS: event.target.value})
+  }
+
+  handleSend(event){
+    event.preventDefault();
+    const contract = this.state.contract
+    const account = this.state.accounts[0]
+
+    document.getElementById('new-notification-form').reset()
+    this.setState({showNotification: true});
+
+    // contract.methods.sendIPFS(this.state.formAddress, this.state.formIFPS, {from: account})
+    console.log(this.state.formAddress)
+    console.log(this.state.formIPFS)
+    contract.methods.sendIPFS(this.state.formAddress, this.state.formIFPS)
+    .call()
+    .then(result => {
+      this.setState({formAddress: ""});
+      this.setState({formIPFS: ""});
+    })
+  }
+
+  handleReceiveIPFS(event){
+    event.preventDefault();
+    const contract = this.state.contract
+    const account = this.state.accounts[0]
+    contract.checkInbox({from: account})
+  }
 
   // Turns the file submitted into a buffer
   captureFile = (event) => {
@@ -87,6 +139,21 @@ class App extends Component {
           </button>
         </form>
         <p> The IPFS hash is: {this.state.ipfsHash}</p>
+        <h2> 2. Send notifications here </h2>
+          <form id="new-notification-form" className="scep-form" onSubmit={this.handleSend}>
+            <label>
+              Receiver Address:
+              <input type="text" value={this.state.value} onChange={this.handleChangeAddress} />
+            </label>
+            <label>
+              IPFS Address:
+              <input type="text" value={this.state.value} onChange={this.handleChangeIPFS} />
+            </label>
+            <input type="submit" value="Submit" />
+          </form>
+        <h2> 3. Receive Notifications </h2>
+          <button onClick={this.handleReceiveIPFS}>Receive IPFS</button>
+          <p>{this.state.receivedIPFS}</p>
       </div>
     );
   }

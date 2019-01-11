@@ -1383,12 +1383,12 @@
     "1547239383800": {
       "events": {},
       "links": {},
-      "address": "0xAAf60E2178E49034DB93645245eedeAF586E33EC",
-      "transactionHash": "0x6a2a1e6161b4b69a9979fcf7ee8775521008df1512ce394b9b807aff9777217e"
+      "address": "0x0B5F71dBa370a8f6C4cDe8F4f7A98c3669Ad7FE8",
+      "transactionHash": "0xb58005d0abc8967e8cca1a48117db25f257a2f41608eb7070f9e913c31b91168"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T21:48:06.455Z",
+  "updatedAt": "2019-01-11T23:03:27.785Z",
   "devdoc": {
     "methods": {}
   },

@@ -558,12 +558,12 @@
     "1547239383800": {
       "events": {},
       "links": {},
-      "address": "0xC697e35E8B7c0cD6D94C5A52045c1c85b4387EfD",
-      "transactionHash": "0x2ee268f60041be0c45b839508a7d649fde795da04eca59ef782bd8c8a01ea429"
+      "address": "0xbAF84cA6eDc50D591D2cb349405a2BE8053833Aa",
+      "transactionHash": "0x13f83ec5cd6c3fc3a6485cc96e2ae53d2b269bf53a7637804d1efb2a5c31f4f4"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T21:48:06.196Z",
+  "updatedAt": "2019-01-11T23:03:27.489Z",
   "devdoc": {
     "methods": {}
   },

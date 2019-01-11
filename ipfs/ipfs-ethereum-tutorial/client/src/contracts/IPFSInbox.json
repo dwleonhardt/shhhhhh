@@ -2545,12 +2545,12 @@
     "1547239383800": {
       "events": {},
       "links": {},
-      "address": "0x6CcC5111C4d89c146a639cde92418c04683fDAe4",
-      "transactionHash": "0x3301e53b1f374beeaf267fb37f75c99d0375904b9eff5a37512b619292cf55c8"
+      "address": "0x7155Fe4B535399843d0C435c584d92bca71544B8",
+      "transactionHash": "0x980161a55aabd9d52a503341c77f2a4e649e5b6f6beb6db24c9bd9105a822ae4"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-11T21:48:06.458Z",
+  "updatedAt": "2019-01-11T23:03:27.787Z",
   "devdoc": {
     "methods": {}
   },
