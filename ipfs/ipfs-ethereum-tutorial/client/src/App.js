@@ -79,7 +79,6 @@ class App extends Component {
     document.getElementById('new-notification-form').reset()
     this.setState({showNotification: true});
 
-    console.log(this.state.formAddress, this.state.formIPFS)
     contract.methods.sendIPFS(this.state.formAddress, this.state.formIPFS)
     .send({from: account})
     .then(() => {
