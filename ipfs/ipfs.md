@@ -32,7 +32,9 @@ Research by Amber Johnson
 * Textile photo wallet - app for secure photo storage using IPFS
 
 ## How-To Guide
-The instructions below will allow you to store and access encrypted documents.
+The instructions below will allow you to store and access encrypted documents.  
+
+For a basic frontend integrating IPFS and smart contracts, see the [ipfs-ethereum-tutorial](https://gitlab.com/ideas-by-nature/internal/research/tree/master/ipfs/ipfs-ethereum-tutorial) folder within this repo.
 
 ### Basic Setup
 For a more thorough setup and how-to guide, see [this Medium article](https://medium.com/@mycoralhealth/learn-to-securely-share-files-on-the-blockchain-with-ipfs-219ee47df54c).
