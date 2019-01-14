@@ -63,8 +63,7 @@ Note: you will need two computers to complete the following steps.
     * The file has been decrypted and can now be accessed!
 
 ## Summary
-
-
+IPFS is an efficient way to store and share files, but does not support encryption on its own.
 
 ## Resources
 
